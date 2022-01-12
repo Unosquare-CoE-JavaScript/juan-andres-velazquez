@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -20,16 +19,14 @@ function App() {
         </button>
       </div>
       <div>
-      <label>
-        <input 
-          type="checkbox" 
-          id="enable-button-checkbox"
+        <input
+          type="checkbox"
+          id="disable-button-checkbox"
           defaultChecked={disabled}
           aria-checked={disabled}
-          onChange={(e) => setDisabled(e.target.checked)}    
+          onChange={(e) => setDisabled(e.target.checked)}
         />
-        My Checkbox
-      </label>
+        <label htmlFor="disable-button-checkbox">Disable Button</label>
       </div>
     </div>
   );
